@@ -1,0 +1,136 @@
+<!DOCTYPE html><html>                            <!-- this is the boiler plate code-->
+    <head>    
+        <meta charset="utf-8">          <!-- this contains all the metadate of the webpage-->
+        <title>Assignment3</title>   <!--the title of webpage -->
+         <link rel="stylesheet" href="style.css">     <!-- the link of CSS code to this HTML & JS-->
+        </head>  
+        <body>    
+            <header> 
+                <h2 id = "Act_time"></h2>                        
+                <h1>METAVERSE IN HEALTHCARE</h1>   <!-- The main Heading for the webpage and my main subject for this assignment -->
+                <hr> 
+                <button id="icon">Toggle Theme</button>  <!-- the button to change theme of the webpage-->
+            </header>    
+            <nav> 
+                 <div class = "head_lst">
+                    <ul>       
+                        <br>
+                        <!-- this is the main menu of the webpage -->
+                        <li><a href="#">Home</a></li>        
+                        <li><a href="#">Our team</a></li>        
+                        <li><a href="#">Projects</a></li>        
+                        <li><a href="#">Contact</a></li>     
+                        <br>
+                    </ul> 
+
+                 </div>  
+              <div class = "plc_hld">       
+                <form>  
+                    <!-- this is code for the user to input his name so that the website will greet back by saying hello and printing their name as well-->       
+                    <input type="text" name="user_name" placeholder="Enter your name!" id = "user_input">         
+                    <button type="submit" onclick = "myFunction()">Apply!</button>   <!-- button to click to get the greeting message--> 
+                    <h1 id="message"></h1>   
+                </form>   
+                </div>
+                <style>
+                    body{
+                        color: aliceblue;
+                    }
+                </style>
+                <script>
+                    // the javascript code for the greeting message 
+                    
+                    function myFunction(){                                 // defined a function for usage
+                        let user_input = document.querySelector("#user_input");    // defined a variable and selected the query for user input
+                        let message = document.querySelector("#message");     
+
+                        message.innerHTML = "Hello, " + user_input.value;   // linked HTML with JS and printed HELLO + the message to the screen
+                    }
+                </script>
+            </nav>    
+            <main>
+                <!--  All the links for the images before the introduction of the webpage -->
+                    <img id="picture_seen" src="https://www.medicalit.services/wp-content/uploads/2022/06/Metaverse-Reshaping-Healthcare-Industry.jpg">   <!-- given the webpage a default image to first display to the screen-->
+                    <!-- given these buttons an id to work with in CSS and JS-->
+                    <p id="image-info"></p>
+                    <button onclick="image_alter('https://www.commbank.com.au/content/dam/commbank-assets/articles/2022-05/AI-healthcare_standard.jpg','This is a image that represents the way of treatment in past times' )">PAST</button>
+                    <button onclick="image_alter('https://www.techrepublic.com/wp-content/uploads/2022/05/Metaverse-Evolution.jpeg','This image represents the evolution of Metaverse in Healthcare with time')">EVOLUTION</button>
+                    <button onclick="image_alter('https://www.cognihab.com/blog/assets/admin/uploads/Metaverse%20in%20the%20healthcare%20industry.jpg','This image reresents the experiements that have been going on for time')">EXPERIEMENTS</button>
+                    <button onclick="image_alter('https://img.freepik.com/premium-vector/profit-money-budget-cash-rising-graph-arrow-up-concept-business-success_100456-5979.jpg','This image represents the rise that Metaverse has climbed to')">RISE</button>
+                    <button onclick="image_alter('https://medcitynews.com/uploads/2020/12/GettyImages-1185128095-600x337.jpg','Lastly the future of Metaverse in healthcare')">FUTURE</button>     
+                <article>  
+                    <div class = "full">
+                        <div class = "intro">       <!-- given class to introduction of the webpage to manipulate it later -->
+                            <h2>INTRODUCTION</h2>   <!-- the heading within h2 tags-->
+                            <hr>    
+                            <!-- all the information about the emerging Information Technology, written within these p tags -->    
+                            <p>The metaverse in healthcare is a revolutionary concept that harnesses the power of virtual and interconnected digital environments to transform the way we approach healthcare and medical services. By leveraging augmented and virtual reality technologies, the metaverse offers innovative solutions for medical training, telemedicine, patient engagement, and data visualization. In this immersive digital realm, medical professionals can enhance their skills through realistic simulations, patients can access remote consultations and immersive health information, and complex medical data can be visualized in ways previously unimaginable. The metaverse opens up new horizons for medical education, treatment planning, and research, promising a future where healthcare is more accessible, engaging, and effective. It presents opportunities for collaboration, innovation, and improved patient care that are poised to shape the future of the healthcare industry.</p>
+                        </div>      
+                        <div>
+                            <img src = "cool-medical-and-health-symbols-yk9ofybop75souw0.jpg " id = intro_img>   <!-- this image is closely defining the introduction of the webpage-->
+                        </div>
+                    </div>
+                    <div>
+                        <img src ="shutterstock_2069231249.jpg" id = "choice_img" >  <!-- this image interprets the usage of VR by human in the future and how doctors will be able to use that to have surgical and medical assistance -->
+                        </div>
+                        <div class = "choice">
+                            <h3>WHY METAVERSE</h3>    <!-- this is second heading of the webpage-->
+                        <hr>  
+                        <!-- this p tags explain how and why to choose metaverse for a better future and for the betterment of the world of medicure-->     
+                        <p>Choosing the metaverse in healthcare offers a transformative approach to education, patient care, and data management. It provides immersive, interactive experiences for medical training, enables remote patient consultations, and facilitates advanced data visualization, promising enhanced medical services, improved accessibility, and innovative solutions to healthcare challenges.</p>        
+                        <p>In summary, choosing the metaverse in healthcare provides a compelling pathway to transforming medical education, patient care, and research. It offers the potential to make healthcare more accessible, engaging, and effective while promoting innovation and collaboration in the medical field.</p>    
+                        </div>    
+                    </div> 
+                    <!--this below h3 and p tags shows the active stakeholder currently working on this technology and making it more and more usable for the people further down the line--> 
+                    <h3>ACTIVE STAKEHOLDERS</h3>   <!-- the third heading of the webpage displayed as follow -->
+                    <hr>       
+                    <p> : Philips Healthcare</p>   
+                    <p> : Oxford Medical Simulation</p>   
+                    <p> : Osso VR</p>
+                    <p> : Touch Surgery (Biodigital)</p>
+                </article>      
+                <aside>        
+                    <h2>RELATED</h2>  <!--the fourth and final heading of the webpage defined here -->  
+                    <hr>
+                    <!-- the below list displays all the links to related websites for my choice of emerging Information Technology and to get to know more about the Augmented and Virtual worlds that these comanies are working on -->    
+                    <ul>          
+                        <li><a href="https://neuralink.com">Get to know more about Human and computer interaction</a></li>          
+                        <li><a href="https://fundamentalsurgery.com">Get to Know more about how VR is becoming fundamental</a></li>          
+                        <li><a href="https://about.meta.com">Learn more about META</a></li>          
+                        <li><a href="https://www.precisionostech.com">Presision OS is a promininent company to look over the next few years</a></li>          
+                        <li><a href="https://www.simxvr.com">Another Major Metaverse Developer</a></li>        
+                    </ul>      
+                </aside>    
+            </main> 
+            <script>
+                // this is the Javascript code for images displayed on the starting of the webpage 
+                // this is the code for when the user clicks one of the five buttons displayed, then the corresponding image comes up the webpage 
+                function image_alter(imageSrc, imageDetails) {
+                    document.getElementById('picture_seen').src = imageSrc;
+                    document.getElementById('image-info').textContent = imageDetails;
+                }
+            </script>
+            <script>
+                // this is the Javascript code for the toggle theme button and onclicking the button below the header the user can experience a different theme of the webpage 
+                var icon = document.getElementById("icon"); // taken a variable to assign the id of the button 
+                icon.onclick = function(){                          // this line of code says that when user clicks the button
+                    document.body.classList.toggle("dark-theme")    // the webpage toggles to dark theme 
+                }
+            </script>
+                <script>
+                    // this is the Javascript code for displaying the time on the top of the webpage 
+                    let time = document.getElementById("Act_time");   // taken a variable to give id for displaying time
+
+                    setInterval(() => {                         // setting the iterval
+                        let d = new Date();                         
+                        time.innerHTML = d.toLocaleTimeString();            // linking inner html and assigning local time of the city to it 
+
+                    },1000)
+                </script>
+            <footer>  
+                <!--this is the footer of the webpage-->
+                <!-- this is basically a licence for all rights reserved by Patel Vraj Navinbhai :) -->    
+                <p>©Copyright 2050 by Patel Vraj Navinbhai. All rights Reserved.</p>    
+            </footer> 
+        </body>
+        </html>

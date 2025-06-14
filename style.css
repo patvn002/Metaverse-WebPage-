@@ -1,0 +1,158 @@
+
+/* defining both the main colors at first in CSS*/
+:root{
+  
+  --primary-colour: #edf2fc;  /* given the page a primary color*/
+  --secondary-colour: #212121;  /* given the page a secondary color*/
+  
+  
+  
+}
+.dark-theme{
+  --primary-colour: #000106;  /* given the page a primary color opposite to :root for theme toggle*/
+  --secondary-colour: #fff; /* given the page a secondary color opposite to :root for the theme toggle*/
+}
+
+html, body, ul {  
+  margin: 0;          /* given the body 0 margin and padding for total viewability of the webpage*/
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serifx;              /* given font family as Times New Roman*/
+  background-color: var(--primary-colour);
+  /* inputed an image in the backgroung of the webpage to make it more lively*/
+  background-image: url("data:image/jpeg;base64,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");
+}
+
+header {
+  background-color: #16caa0;     /* Given Background color to the header */
+  color: var(--primary-colour);
+  padding: 20px;                      /* given 20px for padding*/
+  text-align: center;                       /* aligning the text to the centre for elegancy*/
+  font-family: 'Times New Roman', Times, serif;     /* given font family as Times New Roman*/
+}
+
+/* this is the CSS for the buttons in the HTML*/
+button {
+  background-color: var(--secondary-colour);        
+  color: #15cecb;
+  border-radius: 5px;             /* given border radius to button*/
+  padding: 10px 20px;             /* given some padding for good look*/
+  cursor: pointer;                /* this is code for when user puts cursor on button, it changes to hand pointer*/
+  
+}
+/* this is the CSS for the unordered list in the nav tags in the HTML*/
+nav ul {
+  background-color: var(--secondary-colour);        
+  color: var(--primary-colour);
+  list-style-type: none;                                    
+  text-align: center;                             /* aligning all the list elements to center*/
+  
+  
+}
+nav ul li {
+  display: inline;                    /* the block will be displayed in the desired line */
+  padding: 10px;                      /* given 10px padding */
+  margin-left: 10px;                  /* given left margin to get some space on the left */
+}
+
+nav a {
+  text-decoration: none;
+  color: #16caa0;
+  
+}
+/* this CSS code represent the decoration for 'main' tag of the HTML*/
+main {
+  margin: 20px;
+  background-color: var(--primary-colour);
+  padding: 20px;
+  font-size: 20px;
+  color: var(--secondary-colour);
+
+}
+
+article {
+  margin-bottom: 20px;      /* given bottom margin to article section*/
+}
+
+h2, h3 {
+  color: #0ed2bb;
+}
+
+aside {
+  padding: 10px;
+}
+/* this is the CSS for the fotter section in the HTML*/
+footer {
+  background-color: var(--secondary-colour);        /* colors to help with toggle theme*/
+  color: var(--primary-colour);
+  text-align: center;                       /* alligned the licence text to centre */
+  padding: 10px;
+}
+
+
+/* this is the CSS for the INTRODUCTION part in the HTML*/
+.intro{
+  display: inline-block;
+  width: 50%;                                   /* given 50 percent width to the text section*/
+  margin-right: 100px;                          /* given right margin to intro text*/
+
+  
+}
+
+/* this is the CSS for the image next to introduction in the HTML section*/
+#intro_img{
+  height: 280px;                   /* given height to the image to fit inside the body */           
+  vertical-align: top;            /* given top vertical align to the image */
+  display: inline-block;
+  width: 130%;                        /* given the image width*/
+  margin-top: 100px;                  /* top margin*/
+  border-radius: 5px;                 /* and border radius*/
+  
+}
+
+.full{
+  display: flex;          /* class to modify both text and image together*/
+  
+}
+
+/*CSS for maniplating the placeholder */
+.plc_hld{
+  margin-left: 50px
+
+
+}
+
+
+/* the CSS code to modify the second part of the webpage */
+.choice{
+  display: inline-block;
+  width: 50%;
+  margin-left: 10px;
+  vertical-align: top;
+
+  
+}
+/*the CSS code to decorate the second image of the webpage */
+
+#choice_img{
+  height: 280px;
+  display: inline-block;
+  width: 40%;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+/* This is the CSS code for modifying the default changing image ion the webpage*/
+#picture_seen{
+  width: 850px;
+  height: 400px;
+  margin-bottom: 21px;
+}
+
+/* this is this CSS code for giving primary color to the clock displayed on the top of webpage*/
+#Act_time{
+  color: var(--primary-colour);
+}
+
